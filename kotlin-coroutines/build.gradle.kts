@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
-    application
+  kotlin("jvm") version "1.9.0"
+  application
 }
 
 group = "io.stefankreidel"
@@ -8,17 +8,17 @@ version = "1.0.0"
 
 
 dependencies {
-    testImplementation(kotlin("test"))
+  testImplementation(kotlin("test"))
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 
 kotlin {
-    jvmToolchain(17)
+  jvmToolchain(17)
 }
 
 application {
-    mainClass.set("MainKt")
+  mainClass.set("MainKt")
 }
