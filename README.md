@@ -1,6 +1,6 @@
 # blog-example-projects
 
-A collection of example projects used throughout my blog
+A collection of example projects used throughout my blog. Feel free to check it out on https://www.stefankreidel.io.
 
 ## Requirements
 
