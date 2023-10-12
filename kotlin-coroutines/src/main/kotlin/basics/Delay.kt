@@ -1,5 +1,6 @@
 package basics
 
+import common.enableCoroutineLogging
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
