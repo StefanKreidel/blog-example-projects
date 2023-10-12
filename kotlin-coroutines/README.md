@@ -1,4 +1,4 @@
-# blog-example-projects
+# Coroutine Examples
 
 Example code for my blog posts on Coroutines.
 
