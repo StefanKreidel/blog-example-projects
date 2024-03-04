@@ -3,6 +3,7 @@ package parallel
 import common.enableCoroutineLogging
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.runBlocking
 import mu.KotlinLogging
@@ -39,7 +40,7 @@ class AsyncOperations {
     measureTimeMillis {
       val first = async(Dispatchers.Default) { fibonacci(1_000_000_000) }
       val second = async(Dispatchers.Default) { fibonacci(1_000_000_001) }
-
+      awaitAll(first, second)
     }.apply {
       log.info("Async took $this ms")
     }
